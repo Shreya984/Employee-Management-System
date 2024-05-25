@@ -1,0 +1,24 @@
+package com.employee.management.hr.dl.interfaces.dto;
+import com.employee.management.enums.*;
+import java.math.*;
+import java.util.*;
+public interface EmployeeDTOInterface extends Comparable<EmployeeDTOInterface>, java.io.Serializable {
+	public void setEmployeeID(String employeeID);
+	public String getEmployeeID();
+	public void setName(String name);
+	public String getName();
+	public void setDesignationCode(int designationCode);
+	public int getDesignationCode();
+	public void setDateOfBirth(Date dateOfBirth);
+	public Date getDateOfBirth();
+	public void setGender(GENDER gender);
+	public char getGender();
+	public void setIsIndian(boolean isIndian);
+	public boolean getIsIndian();
+	public void setBasicSalary(BigDecimal basicSalary);
+	public BigDecimal getBasicSalary();
+	public void setPANNumber(String PANNumber);
+	public String getPANNumber();
+	public void setAadharCardNumber(String aadharCardNumber);
+	public String getAadharCardNumber();
+}
